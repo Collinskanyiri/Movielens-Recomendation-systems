@@ -1,9 +1,9 @@
-# MovieLens Recommender System
+# MovieLens Recommendation System
 
 ### Objective:
 Tasked in working on a new growing movie platform looking to compete with other giants such as Netflix, Hulu, and HBO. Your aim is to create a unique experience for each of our customers while subtly increasing company ROI,aim to achieve this by building a tailored, unique recommendation system that can effectively suggest movies to our users, in order to continue to engage them with our platform. 
 
-I want to be able to make predictions to our existing clients, as well as use our recommendation system as a product, to attract new users to our platform. Additionally, as we continue to build up our recommendation systems, and expand our platform by investing in newer and relevant content for users to enjoy.
+I want to be able to make predictions to our existing clients, as well as use our recommendation system as a product, to attract new users to our platform. Additionally, as we continue to build up our recommendation systems, and expand the platform by investing in newer and relevant content for users to enjoy.
 
 
 ## Data
@@ -27,7 +27,7 @@ Some observations/steps we had:
 -Analyzed the distribution of ratings: a rating of 4 was the most frequent 
 -Analyzed the top 10 movies overall, as well as by genre, to use as a future comparison to post-model EDA to determine presence of popularity bias 
 
-## Recommender Modeling
+## Recommendation Modeling
 After thorough cleaning and exploratory data analysis, i began to run our recommender models. Beginning with a baseline KNN-baseline model. Without tuning any hyperparameters, the produced a root mean squared error (RMSE) of 0.8776 ,
 MAE:  0.6675.
 Which i determined that on a rating scale of 0-5 that this performance was expected and was a good start. Moving forward, we explored other recommender algorithms within the Surprise library. In particular, I examined the performnace of models influcned by K-Nearest Neighbors(KNN) that took a nearest neighbours approach based on similarity metrics. We tested KNNBasic, KNNWithMeans and SVD and there performance against the KNN-baseline model; even after tuning.
